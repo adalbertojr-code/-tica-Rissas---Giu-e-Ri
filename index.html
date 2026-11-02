@@ -6,11 +6,11 @@
 <title>RISSAS ÓTICA — Armações e óculos solares</title>
 <meta name="description" content="Armações de grau e óculos solares selecionados. Frete para todo o Brasil, 2x sem juros ou até 10x com juros.">
 <meta name="theme-color" content="#0B1B3D">
-<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="icon" type="image/png" href="assets/favicon-badge.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
 <a class="skip-link" href="#main">Pular para o conteúdo</a>
@@ -55,7 +55,7 @@
 <header class="site-header">
   <div class="header-inner">
     <a class="logo-link" href="#main" aria-label="RISSAS ÓTICA — página inicial">
-      <img class="logo-img" src="assets/logo-rissas-circle.png" alt="" width="46" height="46">
+      <img class="logo-img" src="assets/logo-rissas-badge.png" alt="" width="52" height="52">
       <span class="logo-text">RISSAS<small>ÓTICA</small></span>
     </a>
     <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav" aria-label="Abrir menu">
@@ -145,10 +145,10 @@
       </div>
       <div class="hero-media">
         <figure class="hero-photo">
-          <img src="assets/hero-modelo.jpg" alt="Modelo usando armação de grau" width="900" height="1125" fetchpriority="high">
+          <img src="assets/hero-modelo.jpg" alt="Modelo usando armação de grau" width="900" height="1071" fetchpriority="high">
           <span class="hero-photo-fade" aria-hidden="true"></span>
         </figure>
-        <div class="hero-badge"><img src="assets/logo-rissas-circle.png" alt="Rissas Ótica" width="170" height="170"></div>
+        <div class="hero-badge"><img src="assets/logo-rissas-badge.png" alt="Rissas Ótica" width="170" height="170"></div>
       </div>
     </div>
   </section>
@@ -170,7 +170,7 @@
         </article>
         <article class="category-card">
           <a class="category-media" href="#produtos" data-filter-link="solar">
-            <img src="assets/categoria-solares.jpg" alt="Mulher usando óculos de sol" width="1000" height="693" loading="lazy">
+            <img src="assets/categoria-solares.jpg" alt="Homem usando óculos de sol" width="1000" height="693" loading="lazy">
           </a>
           <div class="category-info">
             <h3>Óculos Solares</h3>
@@ -210,7 +210,6 @@
           <span class="bf-unit"><strong id="bfMinutes">00</strong><small>min</small></span>
           <span class="bf-unit"><strong id="bfSeconds">00</strong><small>seg</small></span>
         </div>
-        <p class="bf-panel-note">Data ajustável em <code>script.js</code>.</p>
       </aside>
     </div>
   </section>
@@ -222,13 +221,15 @@
           <p class="eyebrow">Nossa coleção</p>
           <h2 class="section-title">Encontre o seu próximo queridinho</h2>
         </div>
-        <a href="https://wa.me/5535988836974" class="link-all" target="_blank" rel="noopener">Fale com a gente</a>
       </div>
-      <div class="filter-bar" role="group" aria-label="Filtrar por categoria">
-        <button class="filter-btn is-active" data-filter="all" aria-pressed="true">Todos</button>
-        <button class="filter-btn" data-filter="armacao" aria-pressed="false">Armações</button>
-        <button class="filter-btn" data-filter="solar" aria-pressed="false">Óculos Solares</button>
-        <button class="filter-btn" data-filter="black" aria-pressed="false">Ofertas Black Friday</button>
+      <div class="filter-bar">
+        <div class="filter-group" role="group" aria-label="Filtrar por categoria">
+          <button class="filter-btn is-active" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="filter-btn" data-filter="armacao" aria-pressed="false">Armações</button>
+          <button class="filter-btn" data-filter="solar" aria-pressed="false">Óculos Solares</button>
+          <button class="filter-btn" data-filter="black" aria-pressed="false">Ofertas Black Friday</button>
+        </div>
+        <a href="https://wa.me/5535988836974" class="link-all" target="_blank" rel="noopener">Fale com a gente</a>
       </div>
       <p class="search-status" id="searchStatus" aria-live="polite"></p>
       <ul class="product-grid" id="productGrid"></ul>
@@ -238,7 +239,7 @@
   <section class="editorial">
     <div class="section-inner editorial-grid">
       <figure class="editorial-photo">
-        <img src="assets/lifestyle-grau.jpg" alt="Mulher usando óculos de grau" width="1200" height="811" loading="lazy">
+        <img src="assets/expositor-rissas.jpg" alt="Expositor de óculos da Rissas Ótica" width="2080" height="756">
       </figure>
       <div class="editorial-copy">
         <p class="eyebrow">Sobre a Rissas</p>
@@ -258,7 +259,7 @@
 <footer class="site-footer" id="footer">
   <div class="section-inner footer-grid">
     <div class="footer-brand">
-      <img class="footer-logo" src="assets/logo-rissas-circle.png" alt="RISSAS ÓTICA" width="80" height="80" loading="lazy">
+      <img class="footer-logo" src="assets/logo-rissas-badge.png" alt="RISSAS ÓTICA" width="80" height="80" loading="lazy">
       <p class="logo-text">RISSAS<small>ÓTICA</small></p>
       <p>Mais que óculos, uma nova forma de ver o mundo.</p>
       <div class="social-links">
@@ -305,7 +306,8 @@
   </div>
 </footer>
 
-<script src="produtos.js"></script>
-<script src="script.js"></script>
+<script src="produtos.js?v=3"></script>
+<script src="assets/fotos.js?v=7"></script>
+<script src="script.js?v=4"></script>
 </body>
 </html>

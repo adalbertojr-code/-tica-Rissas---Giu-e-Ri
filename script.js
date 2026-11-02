@@ -117,9 +117,15 @@
   setInterval(tickCountdown, 1000);
 
   /* ---------- Produtos ---------- */
+  // Fotos reais entram por assets/fotos.js, que só lista os arquivos que existem
+  // em assets/fotos-novas-normalizadas/. Sem foto, o card usa os renders de produtos-crop.
+  var FOTOS = window.FOTOS || {};
+
   var PRODUCTS = (window.PRODUTOS || []).map(function (row) {
+    var foto = FOTOS[row[0].split("-")[0]];
     return {
-      img: "assets/produtos-clean/" + row[0],
+      // ?v=5 fura o cache do navegador: as fotos mudaram, mas o nome do arquivo não.
+      img: foto ? "assets/fotos-novas-normalizadas/" + foto + "?v=7" : "assets/produtos-crop/" + row[0],
       category: row[1],
       tag: row[2],
       code: row[3],
