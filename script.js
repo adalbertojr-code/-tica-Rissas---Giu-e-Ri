@@ -24,6 +24,7 @@
   function openNav() {
     nav.classList.add("is-open");
     menuToggle.setAttribute("aria-expanded", "true");
+    menuToggle.setAttribute("aria-label", "Fechar menu");
     navOverlay.hidden = false;
     body.classList.add("no-scroll");
     navClose.focus();
@@ -32,6 +33,7 @@
   function closeNav() {
     nav.classList.remove("is-open");
     menuToggle.setAttribute("aria-expanded", "false");
+    menuToggle.setAttribute("aria-label", "Abrir menu");
     navOverlay.hidden = true;
     body.classList.remove("no-scroll");
   }
@@ -368,6 +370,9 @@
     cart = cart.filter(function (item) {
       return item.product.code !== code;
     });
+    shippingCost = null;
+    shippingResult.textContent = "";
+    shippingResult.className = "cart-shipping-result";
     renderCart();
   }
 
